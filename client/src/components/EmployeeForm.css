@@ -1,0 +1,163 @@
+.employee-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .employee-form-container {
+    flex: 1;
+    max-width: 400px;
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  .employee-data-table {
+    flex: 2;
+    overflow-x: auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #e50914;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  button[type="submit"] {
+    background-color: #e50914;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #b00710;
+  }
+  
+  button[type="button"] {
+    background-color: #666;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #444;
+    color: #e50914;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 2px solid #e50914;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #444; 
+  }
+  
+  tbody tr:hover {
+    background-color: #292929; 
+  }
+  
+  tbody td {
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    border-right: 1px solid #444; 
+  }
+  
+  tbody td:last-child {
+    border-right: none; 
+  }
+  
+  .edit-button {
+    background-color: #00b894;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .edit-button:hover {
+    background-color: #009f75;
+  }
+  
+  .delete-button {
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #b00710;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-form-wrapper {
+      flex-direction: column;
+    }
+  
+    .employee-form-container,
+    .employee-data-table {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 12px;
+    }
+  
+    thead th,
+    tbody td {
+      padding: 8px;
+    }
+  }
+  
